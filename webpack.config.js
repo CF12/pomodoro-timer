@@ -17,6 +17,14 @@ var config = {
         test: /\.jsx?/,
         include: APP_DIR,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   }
